@@ -15,6 +15,10 @@
   color: var(--gray-300);
   border: 0;
 }
+.taskForm input[type="text"]:focus{
+  color: var(--gray-100);
+}
+
 
 .taskForm button {
   background: var(--blue-dark);
@@ -26,6 +30,17 @@
   display: flex;
   align-items: center;
 }
+
+
+.taskForm button[type='submit']:not(:disabled):hover {
+ background: var(--blue);
+
+}
+.taskForm button[type='submit']:disabled{
+  opacity: 0.7;
+  cursor: not-allowed;
+} 
+
 .taskForm button svg {
   margin-left: 0.2rem;
 }
@@ -59,4 +74,7 @@
 }
 .list{
   margin-top: 1.5rem;
+}
+.list div:not(:first-child){
+  margin-top: 1rem;
 }

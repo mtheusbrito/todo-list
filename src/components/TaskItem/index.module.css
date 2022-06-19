@@ -13,12 +13,77 @@
 .item >div{
   display: flex;
   align-items: baseline;
-    gap: 0.6rem;
+    gap: 1rem;
+}
+.done{
+  color: var(--gray-300);
+  text-decoration:line-through;
 }
 .item button{
-  background: none;
+  background: transparent;
   border: 0;
   color: var(--gray-300);
+  padding: 0.3125rem;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
 
+  transition: background .2s;
+
+
+
+}
+.item button:hover{
+  background: var(--gray-500);
+  color: var(--danger);
+  
+
+}
+.round {
+  position: relative;
+}
+.round label {
+  background-color: transparent;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 1.125rem;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1.125rem;
+  transition: background .2s;
+   transition: border-color .2s;
+}
+.round label:hover{
+  border-color: var(--blue-dark);
+  opacity: 1;
+}
+.round label:after {
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 0.25rem;
+  left: 2px;
+  opacity: 0;
+  position: absolute;
+  top: 3px;
+  transform: rotate(-45deg);
+  width: 0.5rem;
+}
+.round input[type="checkbox"] {
+  visibility: hidden;
+}
+.round input[type="checkbox"]:checked + label {
+  background-color: var(--purple-dark);
+  border-color: var(--purple-dark);
+}
+.round input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+.round input[type="checkbox"]:checked + label:hover {
+  background-color: var(--purple);
+  border-color: var(--purple);
 }
 
