@@ -1,0 +1,62 @@
+.container {
+  max-width: 48rem;
+  margin: -1.6rem auto 0;
+  padding: 0 1rem;
+}
+.taskForm {
+  display: flex;
+  gap: 1rem;
+}
+.taskForm input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  background: var(--gray-500);
+  color: var(--gray-300);
+  border: 0;
+}
+
+.taskForm button {
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  border-radius: 8px;
+  border: 0;
+  padding: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.taskForm button svg {
+  margin-left: 0.2rem;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.header p{
+  font-weight: bold;
+}
+.header p:first-child{
+ 
+  color: var(--blue);
+}
+.header p:not(:first-child){
+ 
+  color: var(--purple);
+}
+.header p span{
+  color: var(--gray-200);
+  padding: 0 0.2rem;
+  background: var(--gray-400);
+  border-radius: 8px;
+}
+
+.tasks{
+  margin-top: 6.5rem;
+}
+.list{
+  margin-top: 1.5rem;
+}

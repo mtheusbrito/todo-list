@@ -1,0 +1,24 @@
+.item{
+  padding: 1rem;
+  border: solid 1px var(--gray-300);
+  background: var(--gray-400);
+  color: var(--gray-100);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.item >div{
+  display: flex;
+  align-items: baseline;
+    gap: 0.6rem;
+}
+.item button{
+  background: none;
+  border: 0;
+  color: var(--gray-300);
+
+}
+
